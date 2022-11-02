@@ -10,7 +10,7 @@ const Home = () => {
 	const [list,setList]= useState(["take out the trash", "make the bed"])
 	return (
 		<div className="text-center">
-			<TodoForm setList={setList}/>
+			<TodoForm setList={setList} list={list}/>
 			<TodoList list={list} setList={setList}/>
 		</div>
 	);
