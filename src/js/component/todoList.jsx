@@ -7,10 +7,10 @@ export function TodoList(props) {
 
   return (
     <div className="todo-list p-0">
-      <ul className="p-0">
+     
         {props.list.map((item, index) => (
           <li
-            className="navbar mx-auto px-2"
+            className="navbar mx-auto px-2  todo-list-element d-flex"
             onMouseEnter={() =>
               document.getElementById("ico" + index).classList.add("visible")
             }
@@ -21,13 +21,14 @@ export function TodoList(props) {
           >
             {item}
             <i
+           
               id={"ico" + index}
-              class="fa-regular fa-trash-can"
+              className="fa-regular fa-trash-can ms-auto"
               onClick={() => deleteTodo(index)}
             ></i>
           </li>
         ))}
-      </ul>
+      
     </div>
   );
 }

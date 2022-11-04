@@ -11,8 +11,7 @@ export function TodoForm(props) {
       setInput("")
      } }
   return (
-    <div className="todo-form">
-      <h1> Todo List</h1>
+    <div className="todo-form border-0 mx-auto text-center todo-list-elements">
       <input 
         type="text"
         value={input}
